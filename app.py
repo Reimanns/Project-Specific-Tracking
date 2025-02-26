@@ -4,6 +4,7 @@ import datetime
 import altair as alt
 import plotly.express as px
 
+st.set_page_config(layout="wide")
 # ---------------------------
 # Helper Functions
 # ---------------------------
