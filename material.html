@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Material Dashboard - Parallel</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 30px;
+      background-color: #f4f4f4;
+    }
+    .logo-container {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    h1, h2 {
+      text-align: center;
+    }
+    /* Navigation Link Style */
+    .nav-link {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .nav-link a {
+      text-decoration: none;
+      font-size: 1.2em;
+      color: #0B3054;
+      border: 1px solid #0B3054;
+      padding: 8px 16px;
+      border-radius: 4px;
+    }
+    .nav-link a:hover {
+      background-color: #0B3054;
+      color: white;
+    }
+    .dashboard {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-bottom: 40px;
+    }
+    .card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      width: 200px;
+      text-align: center;
+    }
+    .card h2 {
+      margin: 0;
+      font-size: 2.5em;
+      color: #333;
+    }
+    .card p {
+      margin: 5px 0 0;
+      color: #777;
+      font-size: 0.9em;
+    }
+    #chartContainer {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      max-width: 400px;
+      margin: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Citadel Completions Logo -->
+  <div class="logo-container">
+    <img src="citadel_logo.png" alt="Citadel Completions" style="max-width: 300px;">
+  </div>
+
+  <h1>Material Dashboard: Parallel</h1>
+
+  <!-- Navigation back to Main Dashboard -->
+  <div class="nav-link">
+    <a href="index.html">Back to Engineering Dashboard</a>
+  </div>
+
+  <!-- Dashboard Cards -->
+  <div class="dashboard">
+    <div class="card">
+      <h2>210</h2>
+      <p>Total Parts</p>
+    </div>
+    <div class="card">
+      <h2>36</h2>
+      <p>Total Services</p>
+    </div>
+    <div class="card">
+      <h2>35</h2>
+      <p>Total Unapproved Reqs</p>
+    </div>
+    <div class="card">
+      <h2>211</h2>
+      <p>Total Approved Reqs</p>
+    </div>
+    <div class="card">
+      <h2>178</h2>
+      <p>Total On P.O.</p>
+    </div>
+    <div class="card">
+      <h2>50%</h2>
+      <p>% Material On Site</p>
+    </div>
+    <div class="card">
+      <h2>60</h2>
+      <p>Total Parts Expected Late</p>
+    </div>
+  </div>
+
+  <!-- Donut Chart: Late vs On-Time Parts -->
+  <div id="chartContainer">
+    <h2>Parts: Late vs. On-Time</h2>
+    <canvas id="donutChart"></canvas>
+  </div>
+
+  <script>
+    const totalParts = 210;
+    const lateParts = 60;
+    const onTimeParts = totalParts - lateParts;
+
+    const ctxDonut = document.getElementById('donutChart').getContext('2d');
+    const donutChart = new Chart(ctxDonut, {
+      type: 'doughnut',
+      data: {
+        labels: ['Late Parts', 'On-Time Parts'],
+        datasets: [{
+          data: [lateParts, onTimeParts],
+          backgroundColor: ['#FF6384', '#36A2EB'],
+          hoverBackgroundColor: ['#FF6384', '#36A2EB']
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          title: {
+            display: true,
+            text: 'Late vs. On-Time Parts'
+          },
+          legend: {
+            position: 'bottom'
+          }
+        }
+      }
+    });
+  </script>
+</body>
+</html>
