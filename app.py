@@ -36,7 +36,7 @@ status_data = {
     "Maverick":  {"Canceled":0,  "Released":23, "In Check":1, "Not Started":7,  "Redlines":0, "In Progress":0},
     "Elisen":    {"Canceled":0,  "Released":6,  "In Check":1, "Not Started":5,  "Redlines":0, "In Progress":7},
     "Cotney":    {"Canceled":3,  "Released":1,  "In Check":1, "Not Started":16, "Redlines":0, "In Progress":2},
-    "Citadel":   {"Canceled":2,  "Released":5,  "In Check":4, "Not Started":1,  "Redlines":0, "In Progress":1}
+    "Citadel":   {"Canceled":2,  "Released":6,  "In Check":3, "Not Started":1,  "Redlines":0, "In Progress":1}
 }
 
 status_labels = ["Canceled", "Released", "In Check", "Not Started", "Redlines", "In Progress"]
