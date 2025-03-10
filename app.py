@@ -109,7 +109,7 @@ if page == "Engineering Dashboard":
                 if week > today:
                     actual_remaining.append(None)
                 else:
-                    actual_completed = df_filtered[df_filtered["ReleasedDate"] < week].shape[0]
+                    actual_completed = df_filtered[df_filtered["ReleasedDate"] <= week].shape[0]
                     actual_remaining.append(total_tasks - actual_completed)
 
             burndown_df = pd.DataFrame({
