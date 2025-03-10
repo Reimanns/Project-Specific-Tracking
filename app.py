@@ -159,22 +159,22 @@ elif page == "Material Dashboard":
     st.subheader("Dashboard Summary")
     col1, col2, col3 = st.columns(3)
     with col1:
-        st.metric("Total Demands", 186)
-        st.metric("Total Unapproved Reqs", 7)
+        st.metric("Total Demands", 152)
+        st.metric("Total Unapproved Reqs", 5)
     with col2:
         st.metric("Total Services", 37)
-        st.metric("Total Approved Reqs", 179)
+        st.metric("Total Approved Reqs", 138)
     with col3:
-        st.metric("Total On P.O.", 136)
-        st.metric("% Material On Site", "59%")
-    st.metric("Total Parts Expected Late", 62)
+        st.metric("Total On P.O.", 118)
+        st.metric("% Material On Site", "78%")
+    st.metric("Total Parts Expected Late", 53)
 
     # ---------------------------
     # Donut Chart: Late vs. On-Time Parts
     # ---------------------------
     st.subheader("Parts: Late vs. On-Time")
-    total_parts = 176
-    late_parts = 62
+    total_parts = 152
+    late_parts = 53
     on_time_parts = total_parts - late_parts
     donut_data = pd.DataFrame({
         "Status": ["Late Parts", "On-Time Parts"],
