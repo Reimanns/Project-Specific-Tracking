@@ -32,11 +32,11 @@ def format_date(dt):
 # ---------------------------
 status_data = {
     "All":       {"Canceled":10, "Released":37, "In Check":4, "Not Started":36, "Redlines":5, "In Progress":27},
-    "BDDS":      {"Canceled":5,  "Released":8,  "In Check":1, "Not Started":5,  "Redlines":5, "In Progress":12},
-    "Maverick":  {"Canceled":0,  "Released":23, "In Check":1, "Not Started":7,  "Redlines":0, "In Progress":0},
-    "Elisen":    {"Canceled":0,  "Released":6,  "In Check":1, "Not Started":5,  "Redlines":0, "In Progress":7},
+    "BDDS":      {"Canceled":5,  "Released":13,  "In Check":1, "Not Started":8,  "Redlines":1, "In Progress":11},
+    "Maverick":  {"Canceled":0,  "Released":20, "In Check":7, "Not Started":6,  "Redlines":0, "In Progress":0},
+    "Elisen":    {"Canceled":0,  "Released":7,  "In Check":2, "Not Started":3,  "Redlines":0, "In Progress":7},
     "Cotney":    {"Canceled":3,  "Released":1,  "In Check":1, "Not Started":16, "Redlines":0, "In Progress":2},
-    "Citadel":   {"Canceled":2,  "Released":6,  "In Check":3, "Not Started":1,  "Redlines":0, "In Progress":1}
+    "Citadel":   {"Canceled":2,  "Released":7,  "In Check":2, "Not Started":1,  "Redlines":0, "In Progress":2}
 }
 
 status_labels = ["Canceled", "Released", "In Check", "Not Started", "Redlines", "In Progress"]
