@@ -102,15 +102,18 @@ if page == "Engineering Dashboard":
             planned_remaining = []
             actual_remaining = []
             today = normalize_date(datetime.datetime.now())
+            actual_completed_today = df_filtered[df_filtered["ReleasedDate"] <= today].shape[0]
             for week in weekly_dates:
                 # Count tasks that are planned completed before this week
                 planned_completed = df_filtered[df_filtered["EstimatedCompletionDate"] < week].shape[0]
                 planned_remaining.append(total_tasks - planned_completed)
+                # For actual remaining, if the week is in the future, use today's progress
                 if week > today:
-                    actual_remaining.append(None)
+                    actual_remaining.append(total_tasks - actual_completed_today)
                 else:
                     actual_completed = df_filtered[df_filtered["ReleasedDate"] <= week].shape[0]
                     actual_remaining.append(total_tasks - actual_completed)
+
 
             burndown_df = pd.DataFrame({
                 "Week": [format_date(d) for d in weekly_dates],
