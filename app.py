@@ -101,7 +101,7 @@ if page == "Engineering Dashboard":
             weekly_dates = get_weekly_dates(earliest, latest)
             planned_remaining = []
             actual_remaining = []
-           today = normalize_date(datetime.datetime.now())
+            today = normalize_date(datetime.datetime.now())
             # Determine the Monday of the current week
             current_monday = today
             while current_monday.weekday() != 0:
