@@ -31,11 +31,11 @@ def format_date(dt):
 # Hard-Coded Status Data
 # ---------------------------
 status_data = {
-    "All":       {"Canceled":12, "Released":65, "In Check":6, "Not Started":33, "Redlines":1, "In Progress":14},
-    "BDDS":      {"Canceled":6,  "Released":19,  "In Check":1, "Not Started":8,  "Redlines":1, "In Progress":7},
+    "All":       {"Canceled":14, "Released":66, "In Check":8, "Not Started":33, "Redlines":0, "In Progress":11},
+    "BDDS":      {"Canceled":6,  "Released":20,  "In Check":2, "Not Started":8,  "Redlines":0, "In Progress":5},
     "Maverick":  {"Canceled":1,  "Released":27, "In Check":0, "Not Started":5,  "Redlines":0, "In Progress":0},
-    "Elisen":    {"Canceled":0,  "Released":8,  "In Check":3, "Not Started":3,  "Redlines":0, "In Progress":5},
-    "Cotney":    {"Canceled":3,  "Released":1,  "In Check":2, "Not Started":16, "Redlines":0, "In Progress":1},
+    "Elisen":    {"Canceled":0,  "Released":8,  "In Check":4, "Not Started":3,  "Redlines":0, "In Progress":4},
+    "Cotney":    {"Canceled":5,  "Released":1,  "In Check":2, "Not Started":16, "Redlines":0, "In Progress":1},
     "Citadel":   {"Canceled":2,  "Released":10,  "In Check":0, "Not Started":1,  "Redlines":0, "In Progress":1}
 }
 
