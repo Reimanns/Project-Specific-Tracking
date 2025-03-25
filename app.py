@@ -175,14 +175,14 @@ elif page == "Material Dashboard":
     st.subheader("Dashboard Summary")
     col1, col2, col3 = st.columns(3)
     with col1:
-        st.metric("Total Demands", 186)
-        st.metric("Total Unapproved Reqs", 5)
+        st.metric("Total Demands", 165)
+        st.metric("Total Unapproved Reqs", 7)
     with col2:
-        st.metric("Total Services", 52)
-        st.metric("Total Approved Reqs", 178)
+        st.metric("Total Services", 53)
+        st.metric("Total Approved Reqs", 158)
     with col3:
         st.metric("Total On P.O.", 130)
-        st.metric("% Material On Site", "77%")
+        st.metric("% Material On Site", "80%")
     st.metric("Total Parts Expected Late", 53)
 
     # ---------------------------
