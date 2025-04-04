@@ -55,15 +55,19 @@ if page == "Engineering Dashboard":
 
     # Load the CSV data (cache to speed up reloads)
     @st.cache_data
+    @st.cache_data
     def load_data():
         df = pd.read_csv("drawings.csv", parse_dates=["EstimatedCompletionDate", "ReleasedDate"])
         # Remove rows with missing/blank DrawingNumber
         df = df[df["DrawingNumber"].notna() & (df["DrawingNumber"].str.strip() != "")]
         if "EstimatedCompletionDate" in df.columns:
+            df["EstimatedCompletionDate"] = pd.to_datetime(df["EstimatedCompletionDate"], errors='coerce')
             df["EstimatedCompletionDate"] = df["EstimatedCompletionDate"].apply(normalize_date)
         if "ReleasedDate" in df.columns:
+            df["ReleasedDate"] = pd.to_datetime(df["ReleasedDate"], errors='coerce')
             df["ReleasedDate"] = df["ReleasedDate"].apply(normalize_date)
         return df
+
 
     df = load_data()
 
