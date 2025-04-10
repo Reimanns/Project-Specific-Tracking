@@ -33,9 +33,9 @@ def format_date(dt):
 status_data = {
     "All":       {"Canceled":16, "Released":73, "In Check":1, "Not Started":27, "Redlines":2, "In Progress":15},
     "BDDS":      {"Canceled":6,  "Released":27,  "In Check":0, "Not Started":3,  "Redlines":0, "In Progress":5},
-    "Maverick":  {"Canceled":3,  "Released":27, "In Check":0, "Not Started":5,  "Redlines":0, "In Progress":0},
+    "Maverick":  {"Canceled":3,  "Released":27, "In Check":2, "Not Started":3,  "Redlines":0, "In Progress":0},
     "Elisen":    {"Canceled":0,  "Released":16,  "In Check":0, "Not Started":0,  "Redlines":0, "In Progress":3},
-    "Cotney":    {"Canceled":5,  "Released":1,  "In Check":1, "Not Started":14, "Redlines":1, "In Progress":2},
+    "Cotney":    {"Canceled":5,  "Released":1,  "In Check":1, "Not Started":12, "Redlines":1, "In Progress":4},
     "Citadel":   {"Canceled":2,  "Released":11,  "In Check":0, "Not Started":0,  "Redlines":0, "In Progress":1}
 }
 
