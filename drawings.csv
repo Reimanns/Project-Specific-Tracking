@@ -1,7 +1,7 @@
 DrawingNumber,DrawingOwner,EstimatedCompletionDate,ReleasedDate,Status
 7517-MC-01001-700,BDDS,1/20/2025,1/29/2025,Released
 7517-MC-01001-704,BDDS,2/1/2025,2/4/2025,Released
-7517-MF-04201-700,BDDS,3/5/2025,,Drawing Started
+7517-MF-04201-700,BDDS,3/5/2025,4/10/2025,Released
 7517-MR-05001-700,BDDS,12/15/2024,2/28/2025,Released
 7517-MR-05101-700,BDDS,3/28/2025,4/4/2025,Released
 7517-MR-05101-702,BDDS,4/2/2025,,Drawing Started
@@ -29,7 +29,7 @@ DrawingNumber,DrawingOwner,EstimatedCompletionDate,ReleasedDate,Status
 7517-MR-05007-702,BDDS,4/31/2025,,Not Started
 7517-MR-10000-900,BDDS,1/13/2025,1/21/2025,Released
 7517-MR-05009-700,BDDS,4/31/2025,,Not Started
-7517-MR-06000-700,BDDS,4/31/2025,,Not Started
+7517-MR-06000-700,BDDS,4/31/2025,4/10/2025,Released
 7517-MF-01015-700,BDDS,3/13/2025,3/13/2025,Released
 7517-MR-09001-700,BDDS,3/28/2025,4/1/2025,Released
 7517-MR-09000-100,BDDS,3/28/2025,3/28/2025,Released
@@ -77,7 +77,7 @@ DrawingNumber,DrawingOwner,EstimatedCompletionDate,ReleasedDate,Status
 7517-MF-01011-100,Cotney,1/31/2025,2/19/2025,Released
 7517-MF-01011-500,Cotney,4/8/2025,3/12/2025,Redlines and Markups Required
 7517-MF-01011-700,Cotney,3/31/2025,,Drawing Started
-7517-MF-01013-700,Cotney,3/26/2025,,Citadel Check
+7517-MF-01013-700,BDDS,3/26/2025,4/10/2025,Released
 7517-MR-05400-100,Cotney,5/1/2025,,Not Started
 7517-MR-05400-700,Cotney,5/1/2025,,Not Started
 7517-MY-30000-001,Cotney,7/31/2025,,Not Started
