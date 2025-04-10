@@ -77,7 +77,7 @@ DrawingNumber,DrawingOwner,EstimatedCompletionDate,ReleasedDate,Status
 7517-MF-01011-100,Cotney,1/31/2025,2/19/2025,Released
 7517-MF-01011-500,Cotney,4/8/2025,3/12/2025,Redlines and Markups Required
 7517-MF-01011-700,Cotney,3/31/2025,,Drawing Started
-7517-MF-01013-700,Cotney,3/26/2025,,Vendor Check
+7517-MF-01013-700,Cotney,3/26/2025,,Citadel Check
 7517-MR-05400-100,Cotney,5/1/2025,,Not Started
 7517-MR-05400-700,Cotney,5/1/2025,,Not Started
 7517-MY-30000-001,Cotney,7/31/2025,,Not Started
@@ -110,8 +110,3 @@ P7517-001,Citadel,11/18/2024,1/10/2025,Released
 7517-MX-23001-001,Cotney,7/1/2025,,Not Started
 7517-MW-23002-001,Cotney,7/1/2025,,Not Started
 7517-MX-23002-001,Cotney,7/1/2025,,Not Started
-7517-MX-22005-003,Cotney,7/1/2025,,
-7517-MW-23001-001,Cotney,7/1/2025,,
-7517-MX-23001-001,Cotney,7/1/2025,,
-7517-MW-23002-001,Cotney,7/1/2025,,
-7517-MX-23002-001,Cotney,7/1/2025,,
