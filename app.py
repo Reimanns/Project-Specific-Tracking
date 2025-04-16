@@ -115,7 +115,7 @@ if page == "Engineering Dashboard":
             actual_completed_today = df_filtered[df_filtered["ReleasedDate"] <= today].shape[0]
             for week in weekly_dates:
                 # Calculate planned remaining tasks as before
-                planned_completed = df_filtered[df_filtered["EstimatedCompletionDate"] < week].shape[0]
+                planned_completed = df_filtered[df_filtered["EstimatedCompletionDate"] <= week].shape[0]
                 planned_remaining.append(total_tasks - planned_completed)
     
                 # For the actual remaining:
